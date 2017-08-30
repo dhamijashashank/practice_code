@@ -1,0 +1,11 @@
+org/jenkinsci/plugins/jenkins2/HelloWorldBuilder.stapler
+org/jenkinsci/plugins/jenkins2/JenkinsRootAction.class
+org/jenkinsci/plugins/jenkins2/SleepBuilder/DescriptorImpl/doCheckTime.stapler
+org/jenkinsci/plugins/jenkins2/HelloWorldBuilder/DescriptorImpl/doCheckName.stapler
+org/jenkinsci/plugins/jenkins2/HelloWorldBuilder$DescriptorImpl.class
+org/jenkinsci/plugins/jenkins2/SleepBuilder.class
+org/jenkinsci/plugins/jenkins2/SleepBuilder$DescriptorImpl.class
+org/jenkinsci/plugins/jenkins2/Messages.class
+org/jenkinsci/plugins/jenkins2/HelloWorldBuilder.class
+org/jenkinsci/plugins/jenkins2/SleepBuilder.stapler
+META-INF/annotations/hudson.Extension

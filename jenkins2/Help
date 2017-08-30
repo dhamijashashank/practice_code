@@ -1,0 +1,33 @@
+How to create this Project 
+
+https://wiki.jenkins.io/display/JENKINS/Plugin+tutorial
+
+Run below maven command:
+
+1.mvn -U org.jenkins-ci.tools:maven-hpi-plugin:create
+2.cd project_Name (artifact-id) 
+3.mvn package
+4.mvn install
+
+Don't import in eclipse as maven project : run below command and import as simple project (Under General category)
+
+mvn -DdownloadSources=true -DdownloadJavadocs=true -DoutputDirectory=target/eclipse-classes -Declipse.workspace=/path/to/workspace eclipse:eclipse eclipse:configure-workspace
+Where /path/to/workspace is the path to your Eclipse workspace.
+Once this command completes successfully, use "Import..." (under the File menu in Eclipse) and select "General" > "Existing Projects into Workspace".
+
+for running this project you need to run via command line only 
+
+mvn clean hpi:run
+************************************************************************************************************************************
+
+@Extension
+	#Tell Jenkins to register this class
+	#Just add @Extension and jenkins will load it.
+	
+@DataBoundConstructor
+	# Allow .jelly/.groovy files to pass information from browser(html) to java
+	#Annotation guide the de-serilization the json object to java object.
+
+	
+	
+	

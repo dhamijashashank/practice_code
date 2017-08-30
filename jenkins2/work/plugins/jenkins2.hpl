@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Group-Id: org.jenkins-ci.plugins
+Short-Name: jenkins2
+Long-Name: TODO Plugin
+Url: https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin
+Plugin-Version: 1.0-SNAPSHOT (private-08/30/2017 11:29-shashank.dhamija)
+Hudson-Version: 1.625.3
+Jenkins-Version: 1.625.3
+Plugin-Developers: 
+Libraries: /Users/shashank.dhamija/Documents/jenkins-plugin/t1/jenkins
+ 2/src/main/resources,/Users/shashank.dhamija/Documents/jenkins-plugin
+ /t1/jenkins2/target/classes
+Resource-Path: /Users/shashank.dhamija/Documents/jenkins-plugin/t1/jen
+ kins2/src/main/webapp
+
