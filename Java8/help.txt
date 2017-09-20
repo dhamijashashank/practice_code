@@ -1,0 +1,10 @@
+Hare krishna
+
+
+Why Lambdas :
+
+	1.Enable functional programming.
+	2.Readable and concise code.
+	3.Easier to use APIs and Libraries.
+	4.Enables support for parallel processing.
+	
