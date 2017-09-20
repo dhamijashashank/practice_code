@@ -22,5 +22,40 @@ Functional Vs Object Oriented Programming : (Video 4)
 	
 	List<int> numbersGreaterThanTen = numbers.Where(num => num > 10);
 
-	The snippet inside the Where function is actually another little function that says "return whether or not the 		variable named 'num' is greater than 10." (**See note at bottom about the syntax used here.) When you pass this little 	       function into Where, it runs every number in the list through it, and whichever numbers pass the greater-than-ten 	 test are returned in a new list.
+	The snippet inside the Where function is actually another little function that says "return whether or not the 
+	variable named 'num' is greater than 10." (**See note at bottom about the syntax used here.) When you pass this 
+	little function into Where, it runs every number in the list through it, and whichever numbers pass the greater
+	-than-ten test are returned in a new list.
 
+Why we need Functional programming ? Is we achieve something that is not achievable by Object Oriented programming language?
+
+	Functional programming seams much more abstract to most people. It is a more “mathematical” model. That means mathematical proofs
+	can be applied to functional implementations much easier than to object oriented implementations.
+	As allready stated, functions do not remember any information about the past (no ‘state’). That means f(2873.32) will allways give 
+	the same result no matter where it is calculated and at which point in time. This has interesting consequences:
+	If we need f(2873.32) more than once, the system can store that result somewhere and reuse it later. We cannot do that in OOP because 
+	the result may change depending on state or the function could change state information itself. In a distributed system we can decide 
+	at any time weather it is ‘cheaper’ to send a result from one computer to another or to recalculate it locally. The programmer does not 
+	even have to know as the result will be the same.
+
+	In f(x)= g(x)+h(x)+i(x) the sub results g(x), h(x) and i(x) are totally independend of each other. That means it is not relevant which 
+	of them is calculated first. You can even use three processors to calculate all of them at the same time. The programmer does not have to 
+	think about that.
+
+	Functional programming makes automatic parallelization and other automatic optimizations much easier than the object oriented model.
+	 There is lots of interest in functional programming in high performance computing applications for that reason. Function results do 
+	 not have th be calculated before they are needed and maybe they are never needed. When there is lots of data OOP can result in lots 
+	 of time wasted to generate state information that is never used and memory required to store it. FP can avoid that making it intersting 
+	 for some large scale database, AI, machine learning etc.
+
+	But it is important to remember the limitations: In many situations the result of a function is the argument of the next like this:
+
+	f(x)=g(h(i(x))). In this case we must figure out the results of i,h and g in that order because we don’t know the arguments any earlier. 
+	The same is rue if the result of a function is the argument to itself (recursion) like in f(f)=g(g(g(g(x)))). Functional programming is 
+	not a “magic bullet” to parallel programming. If no parallel algorithm exists for a problem, functional programming won’t change that.
+
+	At first look OOP seams to be more powerfull than functional programming because OOP has state while the other model has not. But it is 
+	not true. Functional programming is also turing complete. There is nothing that can be implemented with OOP that cannot also be done with 
+	FP. The basic idea is simple (in theory, at least): Just combine all state information of all objects of an opbject oriented program into 
+	a single data structure. Pass that as an argument to a single, large funtion that calculates the next state from this and use that function 
+	on its own result over and over again (recursion).
