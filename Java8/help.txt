@@ -1,10 +1,26 @@
 Hare krishna
 
+In This course : (Video 1)
+	1.Understanding Lambdas
+	2.Using Lambdas
+	3.Functional Interface.
+	4.Method Refereance.
+	5.Collection Improvments.
 
-Why Lambdas :
+Why Lambdas : (Video 2)
 
 	1.Enable functional programming.
 	2.Readable and concise code.
 	3.Easier to use APIs and Libraries.
 	4.Enables support for parallel processing.
+
+Dev Setup  : (Video 3)
+
+Functional Vs Object Oriented Programming : (Video 4)
+
+	Example of functional programming:
 	
+	List<int> numbersGreaterThanTen = numbers.Where(num => num > 10);
+
+	The snippet inside the Where function is actually another little function that says "return whether or not the 		variable named 'num' is greater than 10." (**See note at bottom about the syntax used here.) When you pass this little 	       function into Where, it runs every number in the list through it, and whichever numbers pass the greater-than-ten 	 test are returned in a new list.
+
