@@ -31,14 +31,14 @@ Why we need Functional programming ? Is we achieve something that is not achieva
 
 	Functional programming seams much more abstract to most people. It is a more “mathematical” model. That means mathematical proofs
 	can be applied to functional implementations much easier than to object oriented implementations.
-	As allready stated, functions do not remember any information about the past (no ‘state’). That means f(2873.32) will allways give 
+	As already stated, functions do not remember any information about the past (no ‘state’). That means f(2873.32) will always give 
 	the same result no matter where it is calculated and at which point in time. This has interesting consequences:
 	If we need f(2873.32) more than once, the system can store that result somewhere and reuse it later. We cannot do that in OOP because 
 	the result may change depending on state or the function could change state information itself. In a distributed system we can decide 
 	at any time weather it is ‘cheaper’ to send a result from one computer to another or to recalculate it locally. The programmer does not 
 	even have to know as the result will be the same.
 
-	In f(x)= g(x)+h(x)+i(x) the sub results g(x), h(x) and i(x) are totally independend of each other. That means it is not relevant which 
+	In f(x)= g(x)+h(x)+i(x) the sub results g(x), h(x) and i(x) are totally independent of each other. That means it is not relevant which 
 	of them is calculated first. You can even use three processors to calculate all of them at the same time. The programmer does not have to 
 	think about that.
 
@@ -54,17 +54,27 @@ Why we need Functional programming ? Is we achieve something that is not achieva
 	The same is rue if the result of a function is the argument to itself (recursion) like in f(f)=g(g(g(g(x)))). Functional programming is 
 	not a “magic bullet” to parallel programming. If no parallel algorithm exists for a problem, functional programming won’t change that.
 
-	At first look OOP seams to be more powerfull than functional programming because OOP has state while the other model has not. But it is 
-	not true. Functional programming is also turing complete. There is nothing that can be implemented with OOP that cannot also be done with 
-	FP. The basic idea is simple (in theory, at least): Just combine all state information of all objects of an opbject oriented program into 
-	a single data structure. Pass that as an argument to a single, large funtion that calculates the next state from this and use that function 
+	At first look OOP seams to be more powerful than functional programming because OOP has state while the other model has not. But it is 
+	not true. Functional programming is also turning complete. There is nothing that can be implemented with OOP that cannot also be done with 
+	FP. The basic idea is simple (in theory, at least): Just combine all state information of all objects of an object oriented program into 
+	a single data structure. Pass that as an argument to a single, large function that calculates the next state from this and use that function 
 	on its own result over and over again (recursion).
 	
-Passing Behaviour in OOP (Classical example of OOP) : (Video 5)
+Passing Behavior in OOP (Classical example of OOP) : (Video 5)
  	Code in OOP:
  	1.Everything is an object
  	2.All code blocks are associated with classes and object.
  	
- 	 
+ 	
+ Introduction of Lambda Expression and Lambda Examples: (Video 6 and Video 7)
+ 
+ 	1.greetingFunction = () -> System.out.println("Hare krishna");
+ 	2.doubleNumberFunction = (int a) -> a*2;
+ 	3.addNumber = (int a , int b) -> a+b;
+ 	4.safeDivideFunction = (int a , int b) -> {
+ 		if (b == 0) return 0;
+ 		return a/b;
+ 		};
+ 	5.stringLenFucntion = (String s) -> s.lenghth();	 
  	
 
