@@ -59,3 +59,12 @@ Why we need Functional programming ? Is we achieve something that is not achieva
 	FP. The basic idea is simple (in theory, at least): Just combine all state information of all objects of an opbject oriented program into 
 	a single data structure. Pass that as an argument to a single, large funtion that calculates the next state from this and use that function 
 	on its own result over and over again (recursion).
+	
+Passing Behaviour in OOP (Classical example of OOP) : (Video 5)
+ 	Code in OOP:
+ 	1.Everything is an object
+ 	2.All code blocks are associated with classes and object.
+ 	
+ 	 
+ 	
+
