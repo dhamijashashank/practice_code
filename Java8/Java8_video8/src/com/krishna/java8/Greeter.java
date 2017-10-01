@@ -32,7 +32,12 @@ public class Greeter {
 //		MyLambda greetingFunction = () -> System.out.println("Hare krishna");
 		Greeting greetingFunction = () -> System.out.println("Hare krishna");
 		
-		
+		// Using Inner class
+		Greeting greeting = new Greeting(){
+			public void perform() {
+				System.out.println("Hare krishna");
+			}
+		};
 	}
 	
 	// Explination for Video 8 "Lambda as interface type"
@@ -53,7 +58,17 @@ public class Greeter {
 	// It will create compilation error in implementation of both lambda expression because compiler are not able to differenciate 
 	// between both method , so it is mandatory that interface has only one method decleration in case of implementation of lambda expression. 
 	
-	// Insted of using new interface we can use Greeting interface also.
+	// Instead of using new interface we can use Greeting interface also.
+	
+	//Explanation of video 9 Lambda Vs Interface Implementations
+	
+	//There are 3 ways to achieve it 
+//		1. As line Number 29 "HelloWordGreeting hellowordGreet = new HelloWordGreeting();" here we are creating new class which implement interface
+	//  	Using object of this class we call the required method
+	
+//		2. As line Number 33 "Greeting greetingFunction = () -> System.out.println("Hare krishna");" by using lanbda Expression.
+
+//		3. By Anonymous inner class as done in line number 36 , if we call perform method then its own method is called.
 	
 	
 }
