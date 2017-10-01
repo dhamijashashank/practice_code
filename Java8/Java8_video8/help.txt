@@ -112,7 +112,13 @@ Lambda Vs Interface Implementations(Video 9)
 		2. As line Number 33 "Greeting greetingFunction = () -> System.out.println("Hare krishna");" by using lanbda Expression.
 
 		3. By Anonymous inner class as done in line number 36 , if we call perform method then its own method is called.
+		
+Type Inference (Video 10)		
  
+ 	Refer project Java8_video8:
+ 	
+ 	Lambda Example:
+ 	(str) -> str.length();
 	
 Some Questions:
 	Que 1: Are we able to achieve recursive call using functional programming ? If yes then there is any benefits using functional programming ?
