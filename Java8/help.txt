@@ -51,7 +51,7 @@ Why we need Functional programming ? Is we achieve something that is not achieva
 	But it is important to remember the limitations: In many situations the result of a function is the argument of the next like this:
 
 	f(x)=g(h(i(x))). In this case we must figure out the results of i,h and g in that order because we don’t know the arguments any earlier. 
-	The same is rue if the result of a function is the argument to itself (recursion) like in f(f)=g(g(g(g(x)))). Functional programming is 
+	The same is true if the result of a function is the argument to itself (recursion) like in f(f)=g(g(g(g(x)))). Functional programming is 
 	not a “magic bullet” to parallel programming. If no parallel algorithm exists for a problem, functional programming won’t change that.
 
 	At first look OOP seams to be more powerful than functional programming because OOP has state while the other model has not. But it is 
@@ -77,4 +77,9 @@ Passing Behavior in OOP (Classical example of OOP) : (Video 5)
  		};
  	5.stringLenFucntion = (String s) -> s.lenghth();	 
  	
+	
+	
+Some Quections:
+	Que 1: Are we able to achive recurcive call using fucntional programing ? If yes then there is any benifit using functional progaraming ?
+	
 
