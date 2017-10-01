@@ -28,8 +28,32 @@ public class Greeter {
 		Greeter obj = new Greeter();
 		HelloWordGreeting hellowordGreet = new HelloWordGreeting();
 		obj.greet(hellowordGreet);
+		
+//		MyLambda greetingFunction = () -> System.out.println("Hare krishna");
+		Greeting greetingFunction = () -> System.out.println("Hare krishna");
+		
+		
 	}
 	
-	// Now we are passing behaviour to greet method insted of passing direct value, this is classical example of OOP.
-
+	// Explination for Video 8 "Lambda as interface type"
+	// For this one interface is required like below 
+	
+//	interface MyLambda {
+//		
+//		public void foo();
+//		
+//	}
+	
+	// we can use it like  "MyLambda greetingFunction = () -> System.out.println("Hare krishna");"
+	// as compiler got all required info from the interface like return type , Number of parameter .
+	
+	//No we want to write lambda expression which take two parameter and return sum of both.
+	// So we will add one more method declaration in interface like 
+	//public int add(int a , int b);
+	// It will create compilation error in implementation of both lambda expression because compiler are not able to differenciate 
+	// between both method , so it is mandatory that interface has only one method decleration in case of implementation of lambda expression. 
+	
+	// Insted of using new interface we can use Greeting interface also.
+	
+	
 }

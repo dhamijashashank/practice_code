@@ -97,6 +97,11 @@ Passing Behavior in OOP (Classical example of OOP) : (Video 5)
 	
 	7. Its actually invalid to specify return keyword when you have one liner lambda expression without {}!
 	
+	
+Lambda as interface type (Video 8)
+
+	Refer project Java8_video8:- Only "Greeter.java" File
+	
 Some Quections:
 	Que 1: Are we able to achive recurcive call using fucntional programing ? If yes then there is any benifit using functional progaraming ?
 	
