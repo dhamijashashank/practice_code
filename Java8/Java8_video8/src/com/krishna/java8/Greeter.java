@@ -38,6 +38,9 @@ public class Greeter {
 				System.out.println("Hare krishna");
 			}
 		};
+		
+		obj.greet(greetingFunction);
+		obj.greet(greeting);
 	}
 	
 	// Explination for Video 8 "Lambda as interface type"
