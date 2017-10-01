@@ -77,7 +77,25 @@ Passing Behavior in OOP (Classical example of OOP) : (Video 5)
  		};
  	5.stringLenFucntion = (String s) -> s.lenghth();	 
  	
+ 	Think Back to the example of Inline Strings and Numbers. Just like you can pass an inline string value to a method, you can pass in an "inline"
+ 	lanbda expression to.
+ 	Example 
+ 	AT Point 1 some action is store in  "greetingFunction" variable , we can pass this to another method like below:
+ 
+ 	greet(greetingFunction) // as greetingFunction is variable 	
+ 	public void greet (--------){
+ 	
+ 	// Some logic
+	}
+	Insted of passing variable to greet method we pass inline method directly like below
 	
+	greet(() -> System.out.println("Hare krishna"))
+	
+	Behaviour remain same.
+	
+	6. Now Compiler become preety smart that there is no need to tell return type in inline method compiler will detect type as per return value.
+	
+	7. Its actually invalid to specify return keyword when you have one liner lambda expression without {}!
 	
 Some Quections:
 	Que 1: Are we able to achive recurcive call using fucntional programing ? If yes then there is any benifit using functional progaraming ?
