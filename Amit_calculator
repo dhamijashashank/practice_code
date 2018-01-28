@@ -1,0 +1,69 @@
+public class MyClass {
+    public static void main(String args[]) {
+       String input = args[0];
+       int startNumber = Integer.parseInt(args[2]);
+       int endNumber = Integer.parseInt(args[1]);
+        String reverseString = reverseInputString(input);
+        
+        String subString;
+        char[] try1 = input.toCharArray();
+         if (try1.length > endNumber){
+           subString =  reverseString.substring(startNumber, endNumber+1);
+          String finalString =  reverseInputString(subString);
+          System.out.println("OutPut String is "+ finalString);
+          binaryToHexa(finalString);
+          //System.out.println("Hexa Output is "+ binaryToHexa(finalString));
+         }else {
+             System.out.println("Your input string is smaller then requested one , Invalid Request !!");
+         }
+         
+        
+       
+    }
+    
+    public static void binaryToHexa(String inputValue){
+          int[] hex = new int[1000];
+          int i = 1, j = 0, rem, dec = 0, bin;
+         
+          System.out.print("Input a Binary Number: ");
+          bin = Integer.parseInt(inputValue);
+          while (bin > 0) {
+           rem = bin % 2;
+           dec = dec + rem * i;
+           i = i * 2;
+           bin = bin / 10;
+          }
+           i = 0;
+          while (dec != 0) {
+           hex[i] = dec % 16;
+           dec = dec / 16;
+           i++;
+          }
+          System.out.print("HexaDecimal value: ");
+          for (j = i - 1; j >= 0; j--)
+          {
+           if (hex[j] > 9) 
+           {
+            System.out.print((char)(hex[j] + 55));
+           } else
+           {
+            System.out.print(hex[j]);
+           }
+          }
+         }
+    
+    
+    public static String reverseInputString(String inputString){
+        StringBuilder input1 = new StringBuilder();
+        // append a string into StringBuilder input1
+        input1.append(inputString);
+        // reverse StringBuilder input1
+        input1 = input1.reverse();
+        return input1.toString();
+    }
+}
+
+// Sample Input file 1010111110100101 11 0
+// Decimal_string end_Range start_Range
+
+// URL to execute code is https://www.jdoodle.com/online-java-compiler
