@@ -1,0 +1,8 @@
+Some basic command used in mac
+
+Purpose : To open multiple console/Terminal in one window
+Command : osascript -e 'tell application "Terminal" to activate' -e 'tell application "System Events" to tell process "Terminal" to keystroke "t" using command down'
+
+
+Purpose : To add path in .bash_profile file
+command : click on search button on top right of screen and write "/Users" and edit 
